@@ -1,0 +1,4 @@
+#!/bin/sh
+# Disable concurent to run `check-types` after ESLint in lint-staged
+
+cd "$(dirname "$0")/.." && pnpm exec lint-staged --concurrent false
