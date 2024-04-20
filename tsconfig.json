@@ -28,5 +28,6 @@
     ".next/types/**/*.ts",
     "lint-staged.config.js"
   ],
+  "moduleResolution": ["node_modules", ".next", "node"],
   "exclude": ["node_modules"]
 }

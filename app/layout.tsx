@@ -3,7 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter as FontSans } from 'next/font/google';
 
-import { siteConfig } from '@/constant/config';
+import { siteConfig } from '@/constants/config';
 import { cn } from '@/lib/utils';
 
 const fontSans = FontSans({
