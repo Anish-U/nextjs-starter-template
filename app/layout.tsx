@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter as FontSans } from 'next/font/google';
 
+import { siteConfig } from '@/constant/config';
 import { cn } from '@/lib/utils';
 
 const fontSans = FontSans({
@@ -11,9 +12,27 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: 'NextJS Starter Template',
-  description:
-    'NextJS starter template project with ShadCn UI, Prisma, Typescript and TailwindCSS setup',
+  title: siteConfig.title,
+  description: siteConfig.description,
+  icons: {
+    icon: '/favicon/favicon.ico',
+    shortcut: '/favicon/favicon-16x16.png',
+    apple: '/favicon/apple-touch-icon.png',
+  },
+  manifest: `/favicon/site.webmanifest`,
+  openGraph: {
+    url: siteConfig.url,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    siteName: siteConfig.title,
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({
