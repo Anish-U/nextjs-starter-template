@@ -23,7 +23,7 @@ This repository is packed with:
 
 ## Getting Started
 
-### 1. Clone this template using one of the three ways
+### 1. Clone this template using one of the two ways
 
 1. Use this repository as template
 
