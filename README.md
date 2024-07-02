@@ -33,7 +33,7 @@ This repository is packed with:
 2. Using `create-next-app`
 
    ```bash
-   pnpm create next-app  -e https://github.com/Anish-U/nextjs-starter-template ts-pnpm
+   pnpm create next-app  -e https://github.com/Anish-U/nextjs-starter-template %your_project_directory_name%
    ```
 
 ### 2. Install dependencies
